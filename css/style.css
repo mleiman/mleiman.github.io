@@ -1,0 +1,44 @@
+body, html {
+	margin: 0px auto;
+	padding:; 0px auto;
+	background-color: #404040;
+	font-family: sans-serif;
+}
+
+#main {
+	background-color: #A0A0A0;
+	min-width: 100%;
+}
+
+#header {
+	min-width: 100%;
+	height: 100px;
+	margin: 0px auto;
+	padding: 0px auto;
+}
+#name {
+	position: relative;
+	margin-top: 0px;
+	top: 50px;
+	left: 150px;
+	color: #404040;	
+}
+
+#navlist {
+	position: relative;
+	right: -750px;
+}
+#navlist a {
+	font-size: 20px;
+	color: #404040;
+	text-decoration: none;
+
+}
+#navlist a:hover{
+	color:#CFCFCF;
+}
+#menu li {
+	display: inline;
+	padding-right: 20px;
+	list-style-type: none;
+}
