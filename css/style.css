@@ -32,10 +32,17 @@ body, html {
 	font-size: 20px;
 	color: #404040;
 	text-decoration: none;
+	padding: 5px 5px 5px 5px;
 
 }
 #navlist a:hover{
 	color:#CFCFCF;
+	background-color: #404040;
+	border-radius: 10px;
+	border-color: #101010;
+
+	
+
 }
 #menu li {
 	display: inline;
