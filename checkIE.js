@@ -37,12 +37,15 @@ function checkVersion()
   {
     if ( ver < 8.0 )
     {
+
       document.write("IE " + ver);
-    } 
+    }
+  
   }
+  document.write("IE " + ver);
 }
 
-checkIE();
+
 checkVersion();
 
 
