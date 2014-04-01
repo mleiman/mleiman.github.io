@@ -40,7 +40,7 @@ function checkVersion()
     if ( ver < 8.0 )
     {
 
-      alert("IE " + ver);
+      document.write("IE " + ver;
     } 
 
     
