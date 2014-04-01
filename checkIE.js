@@ -1,19 +1,17 @@
-/*function checkIE(){
+function checkIE(){
 
 var appname = navigator.appName;
 var version = navigator.appVersion;
-var codename = navigator.appCodeName;
 var useragent = navigator.userAgent;
 
 
 
 document.write(appname + "<br />");
 document.write(version + "<br />");
-document.write(codename + "<br />");
 document.write(useragent + "<br />");
 
 
-}*/
+}
 
 function getInternetExplorerVersion()
 // Returns the version of Internet Explorer or a -1
@@ -29,6 +27,8 @@ function getInternetExplorerVersion()
   }
   return rv;
 }
+
+
 function checkVersion()
 {
   var ver = getInternetExplorerVersion();
@@ -42,10 +42,9 @@ function checkVersion()
     }
   
   }
-  document.write("IE " + ver);
 }
 
-
+checkIE();
 checkVersion();
 
 
