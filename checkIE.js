@@ -1,4 +1,4 @@
-function checkIE(){
+function checkIE() {
 
 var appname = navigator.appName;
 var version = navigator.appVersion;
@@ -13,13 +13,11 @@ document.write(useragent + "<br />");
 
 }
 
-function getInternetExplorerVersion()
 // Returns the version of Internet Explorer or a -1
 // (indicating the use of another browser).
-{
+function getInternetExplorerVersion() {
   var rv = -1; // Return value assumes failure.
-  if (navigator.appName == 'Microsoft Internet Explorer')
-  {
+  if (navigator.appName == 'Microsoft Internet Explorer') {
     var ua = navigator.userAgent;
     var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
     if (re.exec(ua) != null)
@@ -29,17 +27,16 @@ function getInternetExplorerVersion()
 }
 
 
-function checkVersion()
-{
+function checkVersion() {
 
   var ver = getInternetExplorerVersion();
 
   document.write("<br /> IE ver = "+ ver + "<br />");
-  if ( ver > -1 )
-  {
-    if ( ver < 8.0 )
-    {
-
+  if ( ver > -1 ) {
+    if ( ver < 8.0 ) {
+      /*
+      document.container.write("<p>IE 8.0 or higher is required</p>")
+      */
       document.write("<br />"+ ver + " <  8.0 <br />");
     }
   
