@@ -31,6 +31,8 @@ function getInternetExplorerVersion()
 
 function checkVersion()
 {
+  document.write("<br /> "+ ver + "<br />");
+  
   var ver = getInternetExplorerVersion();
 
   if ( ver > -1 )
