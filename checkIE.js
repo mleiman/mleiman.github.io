@@ -31,17 +31,16 @@ function getInternetExplorerVersion()
 
 function checkVersion()
 {
-  document.write("<br /> Before"+ ver + "<br />");
 
   var ver = getInternetExplorerVersion();
 
-  document.write("<br /> After"+ ver + "<br />");
+  document.write("<br /> IE ver = "+ ver + "<br />");
   if ( ver > -1 )
   {
     if ( ver < 8.0 )
     {
 
-      document.write("<br />if < 8 "+ ver + "<br />");
+      document.write("<br />"+ ver + " <  8.0 <br />");
     }
   
   }
