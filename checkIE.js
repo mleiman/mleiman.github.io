@@ -43,7 +43,7 @@ function checkVersion()
       document.write("IE " + ver);
     } 
 
-    
+    document.write("IE " + ver);	   
   }
 }
 
