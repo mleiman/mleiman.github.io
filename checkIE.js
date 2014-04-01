@@ -1,4 +1,4 @@
-/*function checkIE(){
+function checkIE(){
 
 	var ie = (navigator.appName == "Microsoft Internet Explorer")? true : false;
 	var appname = navigator.appName;
@@ -15,7 +15,7 @@
 	document.write(useragent + "<br />");
 	document.write(rvPos + "<br />");
 	document.write(rv + "<br />");
-}*/
+}
 
 function getInternetExplorerVersion()
 // Returns the version of Internet Explorer or a -1
@@ -40,13 +40,14 @@ function checkVersion()
     if ( ver < 8.0 )
     {
 
-      alert("IE " + ver);
+      document.write("IE " + ver);
     } 
 
     
   }
 }
 
+checkIE();
 checkVersion();
 
 
