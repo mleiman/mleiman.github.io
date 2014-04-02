@@ -29,14 +29,21 @@ function getInternetExplorerVersion() {
 
 function checkVersion() {
 
+  var info = "<h1>This feature requires Internet Explorer 8 or higher.</h1><h2>Please update your browser.</h2>";
+
   var ver = getInternetExplorerVersion();
 
+
   document.write("<br /> IE ver = "+ ver + "<br />");
+  
   if ( ver > -1 ) {
+    
     if ( ver < 8.0 ) {
-      /*
-      document.getElementById("container").innerHTML = "<h1>IE 8.0 or higher is required</h1>";
-      */
+
+      // content = document.getElementById("content"); 
+      // content.innerHTML = info;
+      // content.style.textAlign = "center";
+
       document.write("<br />"+ ver + " <  8.0 <br />");
     }
   
