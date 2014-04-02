@@ -35,7 +35,7 @@ function checkVersion() {
   if ( ver > -1 ) {
     if ( ver < 8.0 ) {
       /*
-      document.container.write("<p>IE 8.0 or higher is required</p>")
+      document.getElementById("container").innerHTML = "<h1>IE 8.0 or higher is required</h1>";
       */
       document.write("<br />"+ ver + " <  8.0 <br />");
     }
