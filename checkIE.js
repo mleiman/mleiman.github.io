@@ -35,20 +35,4 @@ function checkBrowser() {
 }
 
 
-function(){
-
-if(checkBrowser() == 1) {
-
-  if (checkBrowser()) {
-    
-  } else {
-    
-  }
-
-
-}
-
-  
-}
-
-
+checkBrowser();
