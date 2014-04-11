@@ -33,6 +33,8 @@ function checkBrowser() {
 
 function init(){
   main = document.getElementById('main');
+
+  alert(getIEVersion());
   if(checkBrowser()) {
     //alert("not ie");
     main.innerHTML="<h1>Not IE</h1>";
