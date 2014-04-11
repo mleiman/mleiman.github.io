@@ -14,7 +14,9 @@ function getIEVersion() {
 function checkBrowser() {
 
   var ver = getIEVersion();
-  
+  main = document.getElementById('main');
+  var i = getIEVersion();
+  main.innerHTML = "ver = "+ i;
     if ( ver > -1 ) {
         if ( ver < 9 ) {
    
