@@ -18,7 +18,7 @@ function checkBrowser() {
     if ( ver > -1 ) {
         if ( ver < 9 ) {
            
-          return false;
+          return 0;
         } else {
 
           return 1;
@@ -31,7 +31,7 @@ function checkBrowser() {
 
 
 
-if(checkBrowser()) {
+if(checkBrowser() == 1) {
   var info = "<h1>This feature requires Internet Explorer 8 or higher.</h1><h2>Please update your browser.</h2>";
 
   if (checkBrowser()) {
