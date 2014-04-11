@@ -19,14 +19,14 @@ function checkBrowser() {
     if ( ver > -1 ) {
         if ( ver < 9 ) {
    
-          return 0;
+          return false;
         } else {
           
-          return 1;
+          return true;
         }
     } else {
         
-        return 1;
+        return true;
     }
 }
 
@@ -35,6 +35,9 @@ function checkBrowser() {
 function init(){
   main = document.getElementById('main');
   i = getIEVersion();
+  sec= document.getElementById('sec');
+  sec.innerHTML = "<h3> przed if: </h3>"+i;
+
   if(checkBrowser()) {
     //alert("not ie");
     main.innerHTML="<h1>Not IE</h1>" + "<h2> ver = " + i +"</h2>";
