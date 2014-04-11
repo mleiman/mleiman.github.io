@@ -6,7 +6,6 @@ function getIEVersion() {
     if (re.exec(ua) != null)
       rv = parseFloat( RegExp.$1 );
   }
-  alert(rv);
   return rv;
 }
 
@@ -36,14 +35,13 @@ function checkBrowser() {
 function init(){
   main = document.getElementById('main');
   i = getIEVersion();
-  main.innerHTML = "ver = "+ i;
   if(checkBrowser()) {
     //alert("not ie");
-    main.innerHTML="<h1>Not IE</h1>";
+    main.innerHTML="<h1>Not IE</h1>" + "<h2> ver = " + i +"</h2>";
 
   } else {
     //alert("ie");
-    main.innerHTML="<h1>IE</h1>";
+    main.innerHTML="<h1>IE</h1>" + "<h2> ver = " + i +"</h2>";
   }
 }
 
