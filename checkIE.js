@@ -32,9 +32,9 @@ function checkBrowser() {
 
 if(checkBrowser()) {
   alert("not ie");
-  document.getElementById('main').innerHTML="<h1>Not IE</h1>";
+  document.getElementById('#main').innerHTML="<h1>Not IE</h1>";
 
 } else {
   alert("ie");
-  document.getElementById('main').innerHTML="<h1>IE</h1>";
+  document.getElementById('#main').innerHTML="<h1>IE</h1>";
 }
