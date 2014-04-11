@@ -18,14 +18,14 @@ function checkBrowser() {
     if ( ver > -1 ) {
         if ( ver < 9 ) {
            
-        return 0;
+          return false;
         } else {
 
-          return 1;
+          return true;
         }
     } else {
         
-        return 1;
+        return true;
     }
 }
 
