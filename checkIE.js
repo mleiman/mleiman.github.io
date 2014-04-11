@@ -13,7 +13,7 @@ function getIEVersion() {
 
 function checkBrowser() {
 
-  var ver = getInternetExplorerVersion();
+  var ver = getIEVersion();
   
     if ( ver > -1 ) {
         if ( ver < 9 ) {
