@@ -28,4 +28,16 @@ function checkVersion() {
 
 $(document).ready(function() {
   checkVersion();  
+
+  var appname = navigator.appName;
+  var version = navigator.appVersion;
+  var codename = navigator.appCodeName;
+  var useragent = navigator.userAgent;
+
+
+
+  document.write(appname + "<br />");
+  document.write(version + "<br />");
+  document.write(codename + "<br />");
+  document.write(useragent + "<br />");
 });
