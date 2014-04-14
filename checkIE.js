@@ -24,10 +24,11 @@ function checkVersion() {
       });*/
     }
     $("#main").append("<h1>IE > 8</h1>");
+  } else {
+    $("#main").append("<h1>Not IE</h1>");
   }
-} else {
-  $("#main").append("<h1>Not IE</h1>");
 }
+  
 
 $(document).ready(function() {
   checkVersion();  
