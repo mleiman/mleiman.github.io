@@ -1,51 +1,34 @@
-function getIEVersion() {
-  var rv = -1; // Return value assumes failure.
+var info = "<h1>INFO</h1>";
+
+function getInternetExplorerVersion() {
+  var rv = -1;
   if (navigator.appName == 'Microsoft Internet Explorer') {
     var ua = navigator.userAgent;
     var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
     if (re.exec(ua) != null)
       rv = parseFloat( RegExp.$1 );
   }
+
   return rv;
 }
 
+function checkVersion() {
+  var ver = getInternetExplorerVersion();
+  if ( ver > -1 ) {
+    if ( ver < 9.0 ) {
 
-function checkBrowser() {
-
-  var ver = getIEVersion();
-  main = document.getElementById('main');
-  var i = getIEVersion();
-  main.innerHTML = "ver = "+ i;
-    if ( ver > -1 ) {
-        if ( ver < 9 ) {
-   
-          return 0;
-        } else {
-          
-          return 1;
-        }
-    } else {
-        
-        return 1;
+      $("#main").append("<h1>IE <= 8</h1>");
+      /*$("#content").empty();
+      $("#content").append(info).css({
+        textAlign: 'center',
+      });*/
     }
-}
-
-
-
-function init(){
-  main = document.getElementById('main');
-  i = getIEVersion();
-  sec= document.getElementById('sec');
-  sec.innerHTML = "<h3> przed if: </h3>"+i;
-
-  if(checkBrowser()) {
-    //alert("not ie");
-    main.innerHTML="<h1>Not IE</h1>" + "<h2> ver = " + i +"</h2>";
-
-  } else {
-    //alert("ie");
-    main.innerHTML="<h1>IE</h1>" + "<h2> ver = " + i +"</h2>";
+    $("#main").append("<h1>IE > 8</h1>");
   }
+} else {
+  $("#main").append("<h1>Not IE</h1>");
 }
 
-window.onload = init; 
+$(document).ready(function() {
+  checkVersion();  
+});
