@@ -18,7 +18,7 @@ function checkVersion() {
     if ( ver < 9.0 ) {
       $("#main").append("<h1>IE <= 8</h1>");
     } else {
-     $("#main").append("<h1>IE > 8</h1>"); 
+     $("#main").append("<h1>IE >= 9</h1>"); 
     }
   } else {
     $("#main").append("<h1>Not IE</h1>");
