@@ -22,8 +22,9 @@ function checkVersion() {
       $("#content").append(info).css({
         textAlign: 'center',
       });*/
+    } else {
+     $("#main").append("<h1>IE > 8</h1>"); 
     }
-    $("#main").append("<h1>IE > 8</h1>");
   } else {
     $("#main").append("<h1>Not IE</h1>");
   }
