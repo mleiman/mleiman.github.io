@@ -16,13 +16,8 @@ function checkVersion() {
   var ver = getInternetExplorerVersion();
   if ( ver > -1 ) {
     if ( ver < 9.0 ) {
-
       $("#main").append("<h1>IE <= 8</h1>");
-      /*$("#content").empty();
-      $("#content").append(info).css({
-        textAlign: 'center',
-      });*/
-    } else {
+    } else if( ver >= 9.0 ) {
      $("#main").append("<h1>IE > 8</h1>"); 
     }
   } else {
