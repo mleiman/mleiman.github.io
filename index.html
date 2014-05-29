@@ -1,14 +1,33 @@
 <html>
-	<head>
-		<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="checkIE.js"></script>
+<head>
+<script src="jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+   $(document).ready(function($) {
+    var number = 4;
+        for(row = 0; row <= 71; row++) {
+            $("#container").append('<ul class="enlarge">');
 
-	</head>
-	<body>
-		<div id="main">
+            for(cell = 4; cell <= 10 ; cell++) {
+    $(".enlarge").last().append("<li><img src='small_test/"+number+". kopia a.jpg' width='150px' height='100px'/><span><img src='big_test/"+number+". kopia a.jpg'/><br /></span></li>");
+                number++;
+            }
+            $("#container").append('</ul>');
+        }
+    });
+    
 
-		</div>
-		<div id="sec">
-		</div>
-	</body>
+</script>
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+
+</body>
 </html>
+
+
+
+
+
